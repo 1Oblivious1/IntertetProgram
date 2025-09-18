@@ -1,98 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Календарь - Сентябрь 2025</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #000;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .week-number {
-            background-color: #e0e0e0;
-            font-weight: bold;
-            width: 40px;
-        }
-    </style>
+<meta charset="UTF-8" />
+<title>Статический календарь на сентябрь 2025</title>
+<style>
+  body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #2d2d2d;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  caption {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 8px;
+    padding: 12px;
+    background-color: #3d3d3d;
+    color: #ffffff;
+  }
+
+  thead {
+    background-color: #333;
+  }
+
+  th {
+    padding: 10px;
+    border: 1px solid #444;
+    color: #e0e0e0;
+  }
+
+  tbody td {
+    padding: 12px 6px;
+    border: 1px solid #444;
+    text-align: center;
+  }
+
+  /* Подсветка текущей даты */
+  mark {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    padding: 3px 7px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  /* Выделение выходных дней */
+  th strong {
+    color: #ff6b6b;
+  }
+
+  /* Выделение прошедших дат (зачёркнутых) */
+  del {
+    color: #777;
+  }
+
+  /* Выходные дни в ячейках */
+  tbody td strong {
+    font-weight: bold;
+    color: #ff6b6b;
+  }
+</style>
+</style>
 </head>
 <body>
 
-    <table>
-        <caption>Сентябрь 2025</caption>
-        <thead>
-            <tr>
-                <th class="week-number">#</th>
-                <th>Пн</th>
-                <th>Вт</th>
-                <th>Ср</th>
-                <th>Чт</th>
-                <th>Пт</th>
-                <th class="">Сб</th>
-                <th class="">Вс</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="week-number">01</td>
-                <td><del>01</del></td>
-                <td><del>02</del></td>
-                <td><del>03</del></td>
-                <td><del>04</del></td>
-                <td><del>05</del></td>
-                <td><del><strong>06</strong></del></td>
-                <td><del><strong>07</strong></del></td>
-            </tr>
-            <tr>
-                <td class="week-number">02</td>
-                <td><del>08</del></td>
-                <td><del>09</del></td>
-                <td><del>10</del></td>
-                <td><del>11</del></td>
-                <td><del>12</del></td>
-                <td><del><strong>13</strong></del></td>
-                <td><del><strong>14</strong></del></td>
-            </tr>
-            <tr>
-                <td class="week-number">03</td>
-                <td><del>15</del></td>
-                <td><del>16</del></td>
-                <td><del>17</del></td>
-                <td><del>18</del></td>
-                <td><del>19</del></td>
-                <td><del><strong>20</strong></del></td>
-                <td><del><strong>21</strong></del></td>
-            </tr>
-            <tr>
-                <td class="week-number">04</td>
-                <td><del>22</del></td>
-                <td><del>23</del></td>
-                <td><del>24</del></td>
-                <td><del>25</del></td>
-                <td><del>26</del></td>
-                <td><del><strong>27</strong></del></td>
-                <td><del><strong>28</strong></del></td>
-            </tr>
-            <tr>
-                <td class="week-number">05</td>
-                <td><del>29</del></td>
-                <td><del>30</del></td>
-                <td><mark>01</mark></td>
-                <td><mark>02</mark></td>
-                <td><mark>03</mark></td>
-                <td><strong>04</strong></td>
-                <td><strong>05</strong></td>
-            </tr>
-        </tbody>
-    </table>
+<table>
+  <caption>Сентябрь 2025</caption>
+  <thead>
+    <tr>
+      <th>№ недели</th>
+      <th>Пн</th>
+      <th>Вт</th>
+      <th>Ср</th>
+      <th>Чт</th>
+      <th>Пт</th>
+      <th><strong>Сб</strong></th>
+      <th><strong>Вс</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>36</td>
+      <td><del>1</del></td>
+      <td><del>2</del></td>
+      <td><del>3</del></td>
+      <td><del>4</del></td>
+      <td><del>5</del></td>
+      <td><strong><del>6</del></strong></td>
+      <td><strong><del>7</del></strong></td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td><del>8</del></td>
+      <td><del>9</del></td>
+      <td><del>10</del></td>
+      <td><del>11</del></td>
+      <td><del>12</del></td>
+      <td><strong><del>13</del></strong></td>
+      <td><strong><del>13</del></strong></td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td><del>15</del></td>
+      <td><del>16</del></td>
+      <td><del>17</del></td>
+      <td><mark>18</mark></td>
+      <td>19</td>
+      <td><strong>20</strong></td>
+      <td><strong>21</strong></td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>22</td>
+      <td>23</td>
+      <td>24</td>
+      <td>25</td>
+      <td>26</td>
+      <td><strong>27</strong></td>
+      <td><strong>28</strong></td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>29</td>
+      <td>30</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 </body>
 </html>
